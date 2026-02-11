@@ -37,7 +37,7 @@ EOT
     service_principal_id     = optional(string)
     service_principal_key    = optional(string)
     tenant_id                = optional(string)
-    use_managed_identity     = optional(bool, false)
+    use_managed_identity     = optional(bool) # Default: false
     key_vault_connection_string = optional(object({
       linked_service_name = string
       secret_name         = string
